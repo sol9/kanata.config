@@ -1,0 +1,34 @@
+(defcfg
+  process-unmapped-keys yes
+)
+
+(defsrc
+  caps
+  bspc
+  u i o p
+  h j k l
+)
+
+(defvar
+  tap-time 200
+  hold-time 150
+)
+
+(defalias
+  cap (tap-hold-release $tap-time $hold-time caps (layer-while-held navigation))
+)
+
+(deflayer base
+  @cap
+  bspc
+  u i o p
+  h j k l
+)
+
+(deflayer navigation
+  _
+  del
+  home end pgup pgdn
+  left down up rght
+)
+ 
