@@ -15,17 +15,17 @@
 )
 
 (defalias
-  cap (tap-hold-release $tap-time $hold-time caps (layer-while-held navigation))
+  caps-thp (tap-hold-press $tap-time $hold-time caps (layer-while-held caps-layer))
 )
 
 (deflayer base
-  @cap
+  @caps-thp
   bspc
   u i o p
   h j k l
 )
 
-(deflayer navigation
+(deflayer caps-layer
   _
   del
   home end pgup pgdn
