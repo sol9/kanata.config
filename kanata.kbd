@@ -4,9 +4,9 @@
 
 (defsrc
   caps
-  bspc
-  u i o p
+  y u i o p
   h j k l
+  b
 )
 
 (defvar
@@ -20,15 +20,15 @@
 
 (deflayer base
   @caps-thp
-  bspc
-  u i o p
+  y u i o p
   h j k l
+  b
 )
 
 (deflayer caps-layer
   _
-  del
-  home end pgup pgdn
+  bspc home end pgup pgdn
   left down up rght
+  del
 )
  
