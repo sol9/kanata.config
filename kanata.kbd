@@ -6,6 +6,7 @@
   caps
   y u i o p
   h j k l
+  n m
 )
 
 (defvar
@@ -21,11 +22,13 @@
   @caps-thp
   y u i o p
   h j k l
+  n m
 )
 
 (deflayer caps-layer
   _
   del home end pgup pgdn
   left down up rght
+  C-left C-rght
 )
  
